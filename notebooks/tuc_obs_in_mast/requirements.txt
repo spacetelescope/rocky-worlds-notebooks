@@ -1,1 +1,1 @@
-pip install git+https://github.com/spacetelescope/rocky-worlds-utils/
+git+https://github.com/spacetelescope/rocky-worlds-utils
