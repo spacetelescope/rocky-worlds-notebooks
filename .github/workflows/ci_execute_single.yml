@@ -9,10 +9,12 @@ on:
 
 jobs:
   GenerateHTML:
-   uses: spacetelescope/notebook-ci-actions/.github/workflows/ci_execute_single.yml@multi_dev
+   uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
    with:
-      python-version: ${{ vars.PYTHON_VERSION }}
-      filename: ${{ github.event.inputs.filename }}
+      execution-mode: 'on-demand'
+      trigger-event: 'execute'
+      python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
+      single-notebook: ${{ github.event.inputs.filename }}
    secrets:
       CASJOBS_PW: ${{ secrets.CASJOBS_PW }}
       CASJOBS_USERID: ${{ secrets.CASJOBS_USERID }}

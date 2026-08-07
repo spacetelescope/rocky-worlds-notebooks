@@ -25,8 +25,9 @@ on:
  
 jobs:
   NotebookExecutionValidation:
-   uses: spacetelescope/notebook-ci-actions/.github/workflows/ci_runner.yml@v4
+   uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
    with:
+      execution-mode: 'pr'
       python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
    permissions:
      contents: write
