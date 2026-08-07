@@ -4,6 +4,11 @@ on:
 
 jobs:
   GenerateHTML:
-   uses: spacetelescope/notebook-ci-actions/.github/workflows/ci_build_merge_manual.yml@v3
+   uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
    with:
-      python-version: ${{ vars.PYTHON_VERSION }}
+      execution-mode: 'on-demand'
+      trigger-event: 'all'
+      python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
+      enable-html-build: true
+   permissions:
+     contents: write
