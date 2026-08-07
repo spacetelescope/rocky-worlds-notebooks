@@ -9,6 +9,6 @@ jobs:
    uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
    with:
       execution-mode: 'scheduled'
-      python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
+      python-version: ${{ vars.PYTHON_VERSION || '3.12' }}
    permissions:
      contents: write

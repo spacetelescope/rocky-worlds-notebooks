@@ -8,6 +8,6 @@ jobs:
    with:
       execution-mode: 'on-demand'
       trigger-event: 'security'
-      python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
+      python-version: ${{ vars.PYTHON_VERSION || '3.12' }}
    permissions:
      contents: write

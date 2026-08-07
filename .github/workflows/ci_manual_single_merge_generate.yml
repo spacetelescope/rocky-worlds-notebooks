@@ -13,7 +13,7 @@ jobs:
    with:
       execution-mode: 'on-demand'
       trigger-event: 'all'
-      python-version: ${{ vars.PYTHON_VERSION || '3.11' }}
+      python-version: ${{ vars.PYTHON_VERSION || '3.12' }}
       single-notebook: ${{ github.event.inputs.filename }}
       enable-html-build: true
    secrets:
