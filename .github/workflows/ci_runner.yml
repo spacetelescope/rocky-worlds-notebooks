@@ -29,6 +29,6 @@ jobs:
    with:
       execution-mode: 'pr'
       python-version: ${{ vars.PYTHON_VERSION || '3.12' }}
+      pre-processing-script: '.github/scripts/skip_jwst_data_processing_execution.py'
    permissions:
      contents: write
-

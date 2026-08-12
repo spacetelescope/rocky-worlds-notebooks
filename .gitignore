@@ -1,0 +1,32 @@
+.ipynb_checkpoints
+.DS_Store
+.vscode/settings.json
+*.code-workspace
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+.tox/
+
+# Coverage and test artifacts
+.coverage
+.coverage.*
+htmlcov/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Local environments and machine-specific config
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
